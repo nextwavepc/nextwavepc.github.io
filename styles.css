@@ -44,7 +44,7 @@ img {
 }
 
 img.logo {
-	max-height: 64px;
+	max-height: 168px;
 }
 
 .line {
@@ -72,7 +72,7 @@ img.logo {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 80px 40px 60px;
+	padding: 60px 40px 60px;
 	gap: 40px;
 
 	position: absolute;
@@ -154,7 +154,6 @@ a:active {
 
 @media screen and (max-width: 686px) {
 	img.logo {
-		max-height: 48px;
 	}
 
 	.card {
