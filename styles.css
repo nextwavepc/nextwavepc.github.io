@@ -6,7 +6,9 @@ body {
 	background: linear-gradient(-45deg, #1D8DA8, #1F98B6, #188F78, #188F78);
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
-	height: 100vh;
+	margin-left: 80px;
+	margin-right: 80px;
+
 }
 
 @keyframes gradient {
@@ -36,18 +38,25 @@ img {
 	width: auto;
 }
 
-.auto-layout{
+.body{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: flex-start;
-	gap: 10px;
-
-	position: relative;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 .flex-container {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 	align-items: flex-start;
 	gap: 40px;
   }
@@ -56,10 +65,10 @@ img {
     background: rgba(18, 36, 40, 0.05);
 	border: 1px solid rgba(255, 255, 255, 0.5);
 	border-radius: 8px;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 	padding: 80px 40px 60px;
 	gap: 40px;
 
@@ -70,10 +79,9 @@ img {
 }
 
 h2 {
-	width: auto;
+	width: 100%;
 	font-weight: 600;
 	font-size: 20px;
-	line-height: 24px;
 	text-align: center;
 }
 
@@ -100,4 +108,11 @@ a:hover {
 
 a:active {
 	text-decoration: none;
+}
+
+@media screen and (max-width: 744px) {
+	.card 
+	 {
+		padding: 60px 20px 40px;
+	 }
 }
