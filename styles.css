@@ -142,11 +142,30 @@ a:active {
 		padding: 60px 20px 40px;
 		margin-left: 20px;
 		margin-right: 20px;
+		gap: 20px;
 	 }
 }
 
-@media screen and (max-width: 628px) {
+@media screen and (max-width: 642px) {
 	img.logo {
-		max-height: 40px;
+		max-height: 48px;
 	}
+
+	.card {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	h2 {
+		font-size: 16px;
+		
+	}
+
+	.flex-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		gap: 16px;
+	  }
 }
