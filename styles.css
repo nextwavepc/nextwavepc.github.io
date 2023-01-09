@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
-html {
-	margin: -8px;
+html {;
 	height: 100%;
+	width: auto;
+	overflow-x: hidden;
+	overflow: hidden;
+
 }
 
 body {
+	position: relative;
 	font-family: 'Lato', sans-serif;
 	color: white;
 	background: linear-gradient(-45deg, #1D8DA8, #1F98B6, #188F78, #188F78);
@@ -25,7 +29,8 @@ body {
 	-ms-flex-align: center;
 	align-items: center;
 	justify-content: center;
-	min-height: 100%
+	min-height: 100%;
+	width: auto;
 
 }
 
